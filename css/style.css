@@ -1,0 +1,331 @@
+ /* margin 0; padding 0; it used 
+for remove auto margin and padding */
+/*overflow hidden * a use kora jaba na*/
+*{
+	margin:0;
+	padding:0;
+}
+
+/*header portion start*/
+/*min-height used for 
+it may strace in containing conten and
+every div must use in height or min-height otherwisr
+it may not be show in website. overflow:hidden must 
+use because if it is not used in header div, 
+margin and padding must count in the body
+portion*/
+/*somtimes content may conflict with each other 
+in this time it may be used in clear both*/
+
+.header {
+	min-height: 100px;
+	background-color: #121B2A;
+	overflow: hidden;
+}
+
+/*wrapper cls used in width 80% because
+ for logo and navbar. it also used margin 0 auto
+ to keep the content in middle*/
+.wrapper {
+	width: 80%;
+	margin: 0 auto;
+}
+
+.logo {
+	width: 20%;
+	float: left;
+	/*border: 1px solid white;*/
+	margin-top: 10px;
+}
+
+/*img may take in logo_img div otherwise 
+it occupy  the total space
+.logo_img {
+*/
+
+.nav {
+	width: 70%;
+	float: right;
+	/*border: 1px solid white;*/
+	margin-top: 35px;
+	margin-left: 5px;
+}
+.nav ul {
+	list-style: none;
+	
+
+}
+/*float left or display inline dawa jay*/
+.nav ul li {
+   float: left;
+
+}
+
+/*nav portion er total a k move koranor jono ul
+li or ul li a 
+padding dita hoba */
+
+.nav ul li a {
+	text-decoration: none;
+	color: #ffffff;
+	font-size: 20px;
+    padding: 0 33px;
+	
+
+}
+.nav ul li a:hover{
+	color: lightblue;
+}
+/*end header portion*/
+
+/*start banner portion*/
+.banner {
+	background-image: url(../img/bg.jpg);
+	min-height: 400px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	border-top: 3px solid #15273D;
+	border-bottom: 3px solid #15273D;
+	overflow: hidden;
+}
+
+
+/*wrapper no need it used before
+.wrapper {
+}
+*/
+
+.banner_text {
+	margin-top: 100px;
+	width: 50%;
+}
+/*width 50% likha ta k half korar jonnno*/
+
+.banner_text h3 {
+	font-size: 30px;
+	color: #ffffff;
+
+}
+.banner_text h1 {
+	color: #0165A1;
+	font-size: 40px;
+	font-weight: normal;
+}
+
+/*by default normal, but may be defined or not*/
+
+.banner_text p {
+	color: #D0D1D6;
+	font-size: 19px;
+	/*padding: 0 5px;*/
+	padding: 2px 113px 2px -1px;
+    /*negative margin cannot be used*/
+}
+.banner_text button {
+  background-color: #ffffff;
+  padding: 6px 32px;
+  border: none;
+  border-radius: 3px;
+  margin:19px 0px;
+  font-size: 19px;
+}
+/*end banner portion*/
+
+
+/*start service portion*/
+/*service section need padding 
+for top and bottom cause for themeforest 
+standard coding need top and bottom same space*/
+.service {
+  overflow: hidden;
+  background-color: #121B2C;
+  /*min-height: 300px;*/
+  padding: 100px 0;
+
+}
+
+.service_section {
+ overflow: hidden;
+}
+/*for control 3 service1 it need 
+for service_section as wrapper*/
+
+.service1 {
+  /*for 3 potion in same line*/
+  float: left;
+  width: 30%;
+  /*by default 1div is width:100% */
+  /*padding: 0px 10px;*/
+  padding-left: 25px;
+  border-right: 1px solid #DFDFDF;
+}
+/*30 3 div for 90*/
+
+.service1:last-child {
+	border-right: none;
+}
+.content {
+	overflow: hidden;
+}
+
+.content_img {
+  width: 30%;
+  float:left;
+}
+.content_text {
+  width: 70%;
+  float: right;
+  padding-top: 31px;
+}
+
+
+.content_text h2 {
+ color:#E6E7E8;
+ font-size: 25px;
+}
+.wireless {
+	padding-top: 15px;
+}
+.content h4 {
+	color: #0072B4;
+	font-size: 25px;
+}
+
+.content span {
+	color: #0072B4;
+}
+.feature {
+	color: #DFDFDF;
+	font-size: 16px;
+	padding: 5px 21px;
+}
+
+/*End service portion*/
+
+/*start Testimony*/
+.testimony{
+ /*min-height: 280px;*/
+ background-color: #030711; 
+ color: #ffffff;
+ overflow: hidden;
+ padding: 50px 0;
+}
+.contact{
+
+}
+.contact1 {
+  padding: 50px 13px;
+  width: 30%;
+  float: left;
+}
+.contact1 h1 {
+	color: #ffffff;
+	font-size: 25px;
+	padding-bottom: 8px;
+}
+.contact1 p {
+	color: #ffffff;
+	font-size: 16px;
+	padding: 5px 0;
+}
+.contact1 span {
+	color: #0076BA;
+}
+.contact_bg {
+	background-color: #0B1019;
+	padding: 25px 5px;
+}
+.contact_images {
+   overflow: hidden;
+}
+
+.contact_img {
+  margin-top: -13px;
+  padding-left: 40px;
+  float: left;
+  width: 45%;
+}
+.contact_img img {
+    
+	width: 100%;
+}
+.contact_text {
+ padding-top: 10px;
+ float: right;
+ width: 40%;
+}
+.contact_text h1 {
+	color: #ffffff;
+	font-size: 29px;
+	padding-left: 10px;
+}
+.contact_text h2 {
+	font-size: 25px;
+	padding-left: 10px;
+	color: #005586;
+}
+.contact1 button {
+	padding: 11px 29px;
+	margin-top: 10px;
+	margin-left: 11px;
+	background-color: #ffffff;
+	border:none;
+	color: black;
+	border-radius: 3px solid #005586;
+
+}
+.owner {
+    margin: 17px 0px -6px 0px;
+	padding-bottom: 0px;
+
+}
+/*End Testimony*/
+
+/*Start footer*/
+
+.footer {
+ min-height: 150px;
+ background-color: #121B2C;
+ overflow: hidden;
+
+}
+.footer_nav {
+ width: 60%;
+ float: left;
+ margin-left: -52px;
+
+}
+.footer_nav ul {
+	padding-top: 50px;	
+	list-style: none;
+}
+.footer_nav ul li {
+ float: left;
+}
+.footer ul li a {
+	padding-left: 51px; 
+	text-decoration: none;
+	color: #ffffff;
+	border-right: 1px solid #ffffff;
+}
+.footer ul li a:last-child {
+	border-right: none;
+}
+.footer_logo {
+padding-right: 1px;
+padding-top: 22px;
+width: 30%;
+float: right;
+}
+/*.footer_logo img {
+	padding-top: 5px;
+}*/
+.footer_nav p {
+	color: #ffffff;
+	clear: both;
+	margin-left: 50px;
+    margin-top: 38px;
+
+}
+/*end footer*/
